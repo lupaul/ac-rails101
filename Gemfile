@@ -40,7 +40,7 @@ gem "capistrano-rails", :group => :development
 gem "capistrano-passenger", :group => :development
 
 group :production do
-  gem "mysql2"
+  gem "mysql2", '~> 0.3.18'
 end
 
 group :development, :test do
