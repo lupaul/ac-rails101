@@ -21,5 +21,10 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: mysql2
+  pool: 25
+  encoding: utf8mb4
+  database: your_database_name
+  host: localhost
+  username: root
+  password: your_database_password
