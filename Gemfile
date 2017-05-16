@@ -36,9 +36,12 @@ gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'devise'
 gem 'will_paginate'
-gem "mysql2"
 gem "capistrano-rails", :group => :development
 gem "capistrano-passenger", :group => :development
+
+group :production do
+  gem "mysql2"
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
